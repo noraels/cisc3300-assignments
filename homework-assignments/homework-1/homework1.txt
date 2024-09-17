@@ -1,0 +1,19 @@
+1. HTML stands for hypertext markup language and it is a markup programming language that defines the structure, design, and layout of text and images on a webpage.
+2. CSS stands for cascading style sheets and aids in altering the layout/format and design of a webpage. It can be used to change features like margins, padding, font size and color, etc. 
+3. On the page, Fordham has their news stories strutctured to make it clear what they are about. For example, 
+the heading such as "The top 5 Things I Learned About Retail" is bigger than the other words to clarify the topic, 
+and write under in smaller font is the description, which is still readable, but it is clear that's not what Fordham wants 
+to pull your eyes to first. All photos on the page are also attached/right next to some words on the page so it makes it clear
+that the photos are related to and descriptive of the text. Also, in the events section, they have different events in different boxes
+and in chronological order which makes it easy to visualize when everything is happening, and especially relative to the other events.
+4. HTML elements are the building blocks of webpages that are characters inside angled brackets that give the browser information on the content
+of the page (i.e. headings, paragraphs, links, images, etc.). Elements also consist of tags and sometimes attributes. Tags are 
+like containers that have an opening and closing portion (the closing tag includes a /) that transform the content enclosed in them when 
+the html gets interpreted. Attributes consist of a name and a value and give extra information regarding the content of an element.
+5. The two parts are a selector and a declaration
+6. The cascading of rules has to do with understanding which rule takes precedence when two or more apply to the same element. 
+For specificity, more specific selectors will take precedence over less specific ones (i.e. id over class). For inheritence, a parent's style is
+inherited by the child unless a more specific style is applied. For last rule precedence, later declared styles take precedence over earlier ones. Lastly, 
+the important keyword will give a style precedence over everything as it overrules other rules. 
+7. src = "../images/pinecone.jpg"
+8. To send the form to a specific URL and reload the page. 
