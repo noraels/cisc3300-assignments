@@ -1,9 +1,0 @@
-1. inline
-2. relative
-3. deflate
-4. form
-5. style
-6. selectors; selectors 
-7. box
-8. equally
-9. padding 
