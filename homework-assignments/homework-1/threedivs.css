@@ -1,0 +1,16 @@
+.div1, .div2, .div3{
+    display:inline-block;
+    width: 100px;
+    height: 100px; 
+    text-align: center;
+    margin-left:275px;
+}
+.div1{
+    background-color: blueviolet;
+}
+.div2{
+    background-color: aquamarine;
+}
+.div3{
+    background-color: brown;
+}

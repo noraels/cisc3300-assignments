@@ -1,0 +1,78 @@
+.B{
+    font-size: 32px;
+}
+.erkshire{
+    font-size: 18px;
+}
+.H{
+    font-size: 32px;
+}
+.athaway{
+    font-size: 18px;
+}
+.inc{
+    font-size: 15px;
+}
+.address{
+    font-size: 15px;
+}
+.company-info{
+    text-align: center;
+    color: #000080;
+    font-weight: bold; 
+}
+.address{
+    margin-top: -20px;
+    font-size: 13px;
+}
+.home-page{
+    margin-top:-13px;
+    font-size: 16px;
+}
+.content{
+    display: flex; 
+    justify-content: space-between;
+}
+.column1, .column2{
+    width: 90%;
+    margin-top: -5px;
+    gap: 30px;
+}
+.column1{
+    margin-left: 90px;
+}
+.column2{
+    margin-left: -80px;
+}
+li{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+a{
+    color: #800080;
+}
+a:visited{
+    color: #ff0000;
+}
+p.update-date{
+    font-size: 10px;
+    margin-top: -27px;
+    margin-bottom: 20px;
+}
+.geico{
+    margin-top: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 0.5px;
+    color: #000080;
+}
+.geico-logo{
+    width: 60px;
+    height: 15px;
+}
+.footnote{
+    color: #000080;
+    font-size: 13px;
+    line-height: 20px;
+}
