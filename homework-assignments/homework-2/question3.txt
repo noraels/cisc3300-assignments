@@ -1,0 +1,5 @@
+3. Similarities: Both flex box and CSS grid are web layout systems that separate content into containers 
+in order to format the structure of the overall webpage. Both flex box and CSS grid can use rows and columns to format containers, although
+how they do can do this is different for both.
+Differences: Flex box is a 1d layout system while CSS grid is 2d. Flex box, being 1d, can only format the child containers of the parent containers
+in either columns or rows but not both. On the other hand, CSS grid can form both columns and grids that would allow the layout to look "grid-like".
