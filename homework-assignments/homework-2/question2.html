@@ -1,5 +1,8 @@
 <html>
-    <head>Flex Items</head>
+    <head>
+        <title>Flex Items</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
     <body>
         <div class="flex-container">
             <div class="flex-item">Flex Item 1</div>
@@ -10,13 +13,22 @@
             .flex-container{
                 display: flex;
                 flex-direction: row;
+                justify-content: center; 
+                align-items: center;
             }
             .flex-item{
                 width: 100px;
                 height: 100px;
                 margin: 20px 20px;
                 background-color: rgb(178, 75, 178);
-                text-align: center;
+                display: flex;
+                justify-content: center; 
+                align-items: center;
+            }
+            @media screen and (max-width: 499px){
+                .flex-container{
+                    flex-direction: column;
+                }
             }
         </style>
     </body>
