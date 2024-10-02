@@ -1,0 +1,6 @@
+1. model; access; update
+2. XSS attacks 
+3. things
+4. addEventListener
+5. jQuery
+6. .val()
