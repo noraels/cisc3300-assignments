@@ -1,0 +1,18 @@
+1. Javascript is a lightweight interpreted programming language that is used to make web pages dynamic. In an interpreted language, 
+the code is not translated into machine language so that it can be run, but an interpreter both reads and executes the code. In a compiled
+language, the code is translated into machine instruction so that it can be understood and then is run in a separate step.  
+2. A dynamically typed language does type checking at runtime while a statically typed language checks for errors when compiled and will not
+run if there are errors in the code. In dynamically typed languages, variables do not need explicity type declarations and can change their 
+types while the program is running, while this is not true for statically typed languages. In strongly typed languages variable types are strictly
+enforced and so operations on variables can only be done if it is valid for its type. There is also no automatic or implicit type
+conversion meaning if you want to change a variables type you must do so explicitly. In weakly typed languages, the type can change be changed automatically
+so any invalid operations on types will likely just lead to the type changing rather than an error.
+3. var: function scoped so when declared in a function it can be used anywhere within that function and it can be redeclared within its scope as well as reassigned
+its value
+let: block scoped so when declared in a block it can only be accessed within that block. It can be reassigned its value but it cannot be redeclared in its scope
+const: block scoped so it can only be accessed in the block it was declared and it can be neither redeclared in its scope or reassigned
+4. anonymous functions: a function without a name
+higher order functions: a function that either returns a function or takes another function as an argument
+callback functions: a function that is passed as an argument to another function to be called later
+first class functions: the concept that functions are treated like other variables (i.e. passed as arguments to functions, returned from functions, stored in data structures)
+5. An object in javascript is a data structure consisting of key value pairs that looks like: literal constructure: {key:'value'}
