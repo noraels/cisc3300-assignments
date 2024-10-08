@@ -1,0 +1,15 @@
+1. The DOM, the Document Object Model, is an application programming interface (API) that provides specification on how browsers should
+model an HTML webpage and how the javascript should interact with the page (access and update) while it is live in the browser window. A DOM
+tree is the model of a webpage the browser creates once it loads it. A DOM tree is stored in browser memory and has 4 main node types: 
+document node (which is the page), element nodes (individual elements), attribute nodes (the attributes), text nodes (the text).
+2. An XSS attack, or a cross-site scripting attack, is when a user adds malicious code to an input that will be generated as HTML. They
+can occur when HTML can be added to a page through innerHTML or jQuery and a user writes malicious code (this can mean to steal information 
+as well as for other purposes) in an input field that can then be executed on the browser whenever somebody views the page. This can be guarded
+against by limiting what is treated as HTML (if input is treated as html user input can input harmful code the browser will execute), not always
+showing user input, and validating the user input by filtering out tags, specific characters, etc. that can indicate malicious intent. 
+3. Events are interactions that happen to HTML elements on the browser that then trigger code that can be reacted to. 
+4. Event listeners are attached to HTML elements and wait ("listen") for a specific event on that element, such as click, form submit, keyboard press, etc. 
+and then executes a callback function triggered by that event. It expects 2 parameters: the event and the function. 
+5. jQuery is a lightweight javascript library that offers methods that can be called with single lines of code that can be used for common
+tasks. It simplifies HTML, DOM manipulation, event handling, CSS animations, and Ajax making the process of creating a webpage much easier and quicker. 
+You load jQuery onto a page using a cdn to access it externally in a script tag with a src attribute (usually in the head tag of the html) that looks like this: <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  

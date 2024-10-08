@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            const cats = [
+                {
+                    name: 'Charlie',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Lily',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Coco',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Oreo',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Luna',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Milo',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Lola',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Leo',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Willow',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Bella',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Max',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Cleo',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Lucy',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Daisy',
+                    adoptionStatus: 'available'
+                },
+            ];
+            $(document).ready(function(){
+                const ulList = $('#unordered-list');
+                const catList = $('#cats-list');
+                const form = $('#form-id');
+
+                ulList.on('click', function(){
+                    ulList.css('color', 'blue');
+                }); 
+                for (const cat of cats){
+                    catList.append(`<li>${cat.name}</li>`);
+                }
+                form.on('submit', function (e){
+                    e.preventDefault(); 
+                    $('#error-message').remove();
+                    $('#success-message').remove();
+                    var newText = $('input:text').val();
+                    if (newText===""){
+                        const errorMessage = $('<div id="error-message">Please Provide a Value</div>');
+ 
+                        errorMessage.css({
+                            'background-color': 'red',
+                            'color': 'white',
+                            'width': '200px',
+                            'height': '50px',
+                            'margin-top': '10px',
+                            'display': 'flex',
+                            'justify-content': 'center',
+                            'align-items': 'center'
+                        });
+                        form.after(errorMessage);
+                    }
+                    else {
+                        console.log(newText);
+                        const successMessage = $('<div id="success-message">Success!</div>');
+
+                        successMessage.css({
+                            'background-color': 'green',
+                            'color': 'white',
+                            'width': '200px',
+                            'height': '50px',
+                            'margin-top': '10px',
+                            'display': 'flex',
+                            'justify-content': 'center',
+                            'align-items': 'center'
+                        })
+                        form.after(successMessage);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <ul id="unordered-list">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+        <ul id="cats-list"></ul>
+        <form id="form-id">
+            <label>Input:
+                <input type="text" id="text" name="text">
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
