@@ -1,0 +1,24 @@
+1. HTTP (Hyper Text Transfer Protocol) is a client server protocol that fetches resources like HTML documents or JSON data and
+handles communication between clients and servers through requests and responses. The HTTP methods are: 
+GET: retrieves data
+POST: sends data to the server, which typically creates a new resource
+PUT: updates everything (all current representations) for a resource 
+PATCH: partially updates a resource
+DELETE: deletes a resource
+2. An API (application programming interface) is a way to allow two or more computer programs or componenets to communicate. 
+JSON is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects 
+consisting of attribute–value pairs and arrays.
+3. AJAX (asynchronous JavaScript and XML) allows for exchanging data with webservers
+to happen in the background asynchronously so that the webpage can be updated without reloading the entire thing. Asynchronous code allows for
+code to run in the background while other code can still execute.
+4. REST is an architectural style of organizing our code so that requests act upon resources in a standardized way. Resources are any 
+information that can be named (like a document or image) and might be the target of an author’s hypertext reference. It is a mapping
+to a set of entities. If my application had a concept called posts and
+was designed in a RESTful way, what would the URI and HTTP request method be to:
+a. retrieve multiple posts: GET /posts
+b. retrieve a single post: GET /posts/id
+c. save a post: POST /posts
+d. update a post: POST /posts/id
+5. Hoisting is the concept that everytime a new execution context is entered, variables and functions are created and pushed to the top
+of their scope before they are executed. Closure is the ability of a function to remember the variables and functions
+that are declared in its outer scope. 

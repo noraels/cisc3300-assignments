@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function getRecipes() {
+                $.ajax({
+                    url: 'http://localhost:3000/recipes',
+                    type: 'GET',
+                    success: function(data) {
+                        console.log(data);
+                        $('#recipes').html('');
+                        data.forEach(function(recipe) {
+                            $('#recipes').append(`<h2>${recipe.title}</h2><p>${recipe.description}</p>`);
+                        });
+                    },
+                    error: function(error) {
+                        console.log("Error fetching data", error);
+                    }
+                });
+            }
+
+            getRecipes();
+
+            $('#recipe-form').submit(function(e) {
+                e.preventDefault(); 
+
+                const newRecipe = {
+                    title: $('#title').val(), // Get title from input
+                    description: $('#description').val() // Get description from input
+                };
+
+                // Send a POST request to add the new recipe
+                $.ajax({
+                    url: 'http://localhost:3000/recipes',
+                    type: 'POST',
+                    data: JSON.stringify(newRecipe),
+                    success: function(data) {
+                        console.log("Recipe added:", data);
+                        getRecipes(); // Re-fetch recipes to show the new one
+                        $('#recipe-form')[0].reset(); // Clear the form
+                    },
+                    error: function(error) {
+                        console.log("Error adding recipe", error);
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0; 
+            background-color: pink;
+        }
+        input {
+            background-color: rgb(187, 185, 185);
+        }
+        h1, h2 {
+            font-family: sans-serif;
+            text-align: center;
+            color: rgb(72, 17, 17);
+        }
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        #submit-recipe {
+            text-align: left;
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+        }
+        #add-recipe{
+            text-align: left;
+        }
+        form {
+            display: flex; 
+            flex-direction: column; 
+            gap: 10px; 
+        }
+        button {
+            align-self: flex-start; 
+            background-color: rgb(198, 197, 197);
+        }
+    </style>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <div id="recipes"></div>
+    
+    <div id="submit-recipe">
+        <h2 id="add-recipe">Add a Recipe</h2>
+        <form id="recipe-form">
+            <label>Title:
+                <input type="text" id="title" name="title" required>
+            </label>
+            <label>Description:
+                <input type="text" id="description" name="description" required>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

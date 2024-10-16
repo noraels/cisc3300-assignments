@@ -1,0 +1,29 @@
+{
+  "recipes": [
+    {
+      "title": "Pizza",
+      "description": "recipe for margerita pizza",
+      "id": "1"
+    },
+    {
+      "title": "California Roll",
+      "description": "recipe to make a california roll sushi",
+      "id": "2"
+    },
+    {
+      "title": "Hamburger",
+      "description": "recipe for hamburger with lettuce, tomato, pickles, and sauce",
+      "id": "3"
+    },
+    {
+      "title": "Poke Bowl",
+      "description": "recipe for a fresh salmon poke bowl",
+      "id": "4"
+    },
+    {
+      "title": "Chicken Parmesean",
+      "description": "recipe for chicken parmesean",
+      "id": "5"
+    }
+  ]
+}
