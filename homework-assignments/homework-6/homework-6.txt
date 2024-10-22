@@ -1,0 +1,15 @@
+1. PHP (Hypertext Preprocessor) is a server side scripting and interpreted programming language that is dynamic and weakly typed.
+Server side languages process user input and interact with other servers.
+2. Similarities: They are both dynamic and weakly typed and both make dynamic content for a webpage. 
+Differences: javascript is traditionally client side meaning it executes in the browser doing things like changing the content of
+the webpage while php is server side meaning it executes on the server and handles data before it goes to the browser dealing with 
+things like form submissions and databases. Javascript can do real time updates to the HTML of a page but PHP generates the HTML before
+it gets sent to the browser. 
+3. PHP is easy to learn due to its simple syntax and can sync very quickly to most databases and web servers. It is also very 
+widely used (used on 79.2% of all websites).
+4. The include and require keywords take all the text/code/markup that exists in a specified file and copy it into the file that is 
+uses the keyword. The difference is that if the file is not found, with the include keyword an error will be given and the script will 
+continue executing, but with the require keyword it will stop completely. If you use a variable from a file that hasn't been included yet
+you will get an error saying undefined variable because the PHP has not loaded the content of that file, which includes its variables.
+5. echo command is a way to output text while var_dump dumps information about one or more variables including the type and value 
+(including non-primitive values) of the variable.
