@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
     <title>User List</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function() {
             $.ajax({
-                url: 'http://localhost:8888/users', 
+                url: 'http://localhost:8888/index.php/users', 
                 method: 'GET',
                 dataType: 'json',
                 success: function(data) {
@@ -24,10 +28,42 @@
         });
     </script>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .user-list {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 90%; 
+            height: 550px; 
+        }
+        h1 {
+            color: rgb(57, 3, 33);
+            font-family: "Playwrite GB S", cursive;
+            text-decoration: underline wavy #850e57;
+            text-underline-offset: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            color: #850e57;
+            font-family: "Playwrite GB S", cursive;
+        }
     </style>
 </head>
 <body>
-    <div id="user-list-container">
+    <div class="user-list">
         <h1>User List</h1>
         <ul id="user-list">
             <!-- User data will be injected here by JavaScript -->

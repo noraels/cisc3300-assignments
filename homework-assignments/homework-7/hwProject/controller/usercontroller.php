@@ -1,5 +1,4 @@
 <?php
-
     namespace Controllers;
 
     use Models\UserModel;
@@ -11,13 +10,15 @@
         }
 
         // Serve JSON data
-        public function getUserData() {
+        public function getUserData() {        
             $userModel = new UserModel();
-            $data = $userModel->getAllUsers();  // Get data from UserModel
+            $data = $userModel->getAllUsers();
+        
             header('Content-Type: application/json');
-            echo json_encode($data);  // Convert the data to JSON format
-            error_log("JSON data sent: " . json_encode($data)); // Log the JSON data for verification
-            exit();  // Ensure no additional output is sent
-        }    
+            echo json_encode($data);
+            error_log("JSON data output: " . json_encode($data)); // Log JSON data
+            exit();
+        }
+        
     }
 ?>
