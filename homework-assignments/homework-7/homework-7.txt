@@ -1,0 +1,20 @@
+1. Classes are templates for creating objects, defining the shared aspects of objects coming fromt that class. Objects are 
+instances of classes with predefined behavior. They can contain properties and methods. OOP is a type of programming that organizes
+around objects by separating groups of data into objects, that are essentially units of data.
+2. You would use an abstract class when  a class provides some high level functionality but leaves out certain details to be 
+implemented by derived classes. Essentially, you would use them when you already created some default behaviors but want to expand
+on it in child classes.
+3. Superglobals are predefined variables in PHP that are available in all scopes throughout a script so there is no need to use the
+global keyword. For example, $_SERVER is a superglobal array created by the PHP interpreter every time a page is requested and 
+it contains data such as URIs from $_SERVER["REQUEST_URI"] and request methods from $_SERVER["REQUEST_METHOD"].
+4. Step 1 is to define the namespace in the class being used. Step 2 is, in the place you are using the class, either type out the 
+full namespace each time you want to use the class (i.e. $postsModel = new app\models\Post();) or import the class into the current
+namespace with the use keyword (i.e. use app\models\Post)
+5. MVC is an architectural/design pattern that separates an application into three main logical components Model, View, and 
+Controller. 
+Model: handles the data related logic that the user works with. It can add or retrieve data from the database, responding to the 
+controller's request since the controller can't interact with the database itself. 
+Controller: the intermediary between the model and view components. It does not handle data logic, but instead it tells the model what to do 
+to handle that logic. Its job is to process the business logic and incoming requests, use the model to manipulate the data, and then
+interact with view to create the final output. 
+View: takes the data collected by the model through the controller and generates the user interface through languages like HTML, JS, and CSS.
