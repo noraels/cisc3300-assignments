@@ -1,0 +1,10 @@
+1. URL
+2. $_GET
+3. $_POST
+4. not appear
+5. HTML syntax
+6. validity
+7. cookie
+8. sessions
+9. Errors are messages that the PHP interpreter creates when it has a problem running code and exceptions are when code that would 
+normally run is prevented from doing so. Exceptions are thrown and are intended to be caught while errors are generally unrecoverable. 
