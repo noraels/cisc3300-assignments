@@ -6,3 +6,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Route all other requests to index.php
 RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
