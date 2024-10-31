@@ -12,7 +12,7 @@
     <script>
         $(document).ready(function() {
             $.ajax({
-                url: 'http://localhost:8888/index.php/users', 
+                url: '/users', 
                 method: 'GET',
                 dataType: 'json',
                 success: function(data) {
@@ -22,7 +22,6 @@
                     });
                 },
                 error: function() {
-                    alert('Failed to fetch user data.');
                 }
             });
         });

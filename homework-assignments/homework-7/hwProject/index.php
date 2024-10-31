@@ -6,7 +6,7 @@
     
     $controller = new UserController();
     
-    if ($_SERVER['REQUEST_URI'] === '/index.php/users' || $_SERVER['REQUEST_URI'] === '/users') {
+    if ($_SERVER['REQUEST_URI'] === '/users') {
         // Serve JSON data if the URI is /users or /index.php/users
         $controller->getUserData();
     } else {
