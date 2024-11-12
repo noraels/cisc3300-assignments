@@ -1,0 +1,16 @@
+1. SQL (structured query language) is a standard language for database creation and manipulation. MySQL is a relational
+database program that uses SQL queries. Relational databases are databases that use a structure that allows us to 
+identify and access data in relation to another piece of data in the database called relationships.
+2. Normalization organizes the columns and tables of a database to ensure that database integrity constraints properly 
+execute their dependencies. It avoids duplication by using relationships.
+3. Primary keys are the field(s) used to uniquely identify each record in a table. Its 3 requirements are that it: 
+cannot be null, must be unique, and there can only be one defined per table. A foreign key is a field(s) in a table
+that references the primary key of another table. The data in the fields for both tables is the same and the primary
+table must have existing records before the foreign table can have the matching or related records. 
+4. The 3 relationship types are:
+One-to-one: for every record in the primary table there is only one related record in the foreign table
+One-to-many: for every record in the primary table there are one or more related records in the foreign table
+Many-to-many: for every record in the primary table there are one or more related records in the foreign table, and 
+for every record in the foreign table there are one or more related records in the primary table
+5. Left join returns all the records from the left table (table 1), while inner join returns records that have 
+matching values in both tables
